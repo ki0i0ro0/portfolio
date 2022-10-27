@@ -192,26 +192,12 @@ const Home: NextPage = () => {
               <p className="lead">
                 お問い合わせは、
                 <br />
-                SNSかメールにてお願いいたします。
+                メールにてお願いいたします。
               </p>
               <div className="contact-list">
-                <a
-                  className="contact-item"
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </a>
-                <a
-                  className="contact-item"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-                <span className="contact-item">xxxxxx@gmail.com</span>
+                <span className="contact-item">
+                  {process.env.NEXT_PUBLIC_NAME}@gmail.com
+                </span>
               </div>
             </div>
           </section>
@@ -222,7 +208,7 @@ const Home: NextPage = () => {
         </main>
 
         <footer className="footer">
-          <div className="copyright">&copy;Hanako Yamada</div>
+          <div className="copyright">&copy;{process.env.NEXT_PUBLIC_NAME}</div>
         </footer>
       </div>
     </>
