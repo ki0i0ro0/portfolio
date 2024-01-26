@@ -228,3 +228,10 @@
     transform: rotate(0deg);
   }
 }
+
+.horizontalList {
+  display: flex;
+  gap: 20px; /* 項目間のスペースを調整します */
+  list-style: none; /* リストマーカーを削除します */
+  padding: 0; /* パディングを削除します */
+}

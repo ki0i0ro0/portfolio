@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       <div className={styles.links}>
-        <ul>
+        <ul className={styles.horizontalList}>
           <li>
             <a href="#profile">プロフィール</a>
           </li>
