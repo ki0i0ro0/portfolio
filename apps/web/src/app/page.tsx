@@ -4,92 +4,57 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src="/large-image.jpg" // 大きな画像のパスを指定します
+          alt="Large Image"
+          width={800} // 画像の幅を指定します
+          height={600} // 画像の高さを指定します
           priority
         />
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.links}>
+        <ul>
+          <li>
+            <a href="#profile">プロフィール</a>
+          </li>
+          <li>
+            <a href="#skills">スキル</a>
+          </li>
+          <li>
+            <a href="#qualifications">資格</a>
+          </li>
+          <li>
+            <a href="#contact">コンタクト</a>
+          </li>
+        </ul>
       </div>
+
+      <section id="profile">
+        <h2>プロフィール</h2>
+        <p>最適なエンジニアのプロフィールをここに記述します。</p>
+      </section>
+
+      <section id="skills">
+        <h2>スキル</h2>
+        <p>Webエンジニアとしてのスキルをここに記述します。</p>
+      </section>
+
+      <section id="qualifications">
+        <h2>資格</h2>
+        <ul>
+          <li>Google Cloud Certified - Professional Cloud Architect</li>
+          <li>Google Cloud Certified - Professional Data Engineer</li>
+          <li>Google Cloud Certified - Professional Cloud Developer</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>コンタクト</h2>
+        <p>Email:</p>
+      </section>
     </main>
   );
 }
