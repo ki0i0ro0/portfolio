@@ -1,17 +1,14 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/large-image.jpg" // 大きな画像のパスを指定します
-          alt="Large Image"
-          width={800} // 画像の幅を指定します
-          height={600} // 画像の高さを指定します
-          priority
+        <img
+          className={styles.fullWidthImage}
+          src="/background.jpg" // 大きな画像のパスを指定します
+          alt="ウユニ塩湖"
         />
       </div>
 
@@ -51,10 +48,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="contact">
-        <h2>コンタクト</h2>
-        <p>Email:</p>
-      </section>
+      <Contact />
     </main>
   );
 }
