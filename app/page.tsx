@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Contact from "./Contact";
+import Qualifications from "./Qualifications";
 
 export default function Home() {
   return (
@@ -39,14 +40,7 @@ export default function Home() {
         <p>Webエンジニアとしてのスキルをここに記述します。</p>
       </section>
 
-      <section id="qualifications">
-        <h2>資格</h2>
-        <ul>
-          <li>Google Cloud Certified - Professional Cloud Architect</li>
-          <li>Google Cloud Certified - Professional Data Engineer</li>
-          <li>Google Cloud Certified - Professional Cloud Developer</li>
-        </ul>
-      </section>
+      <Qualifications />
 
       <Contact />
     </main>
