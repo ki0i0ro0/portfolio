@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import Contact from "./Contact";
-import Qualifications from "./Qualifications";
+import Contact from "./components/Contact";
+import Qualifications from "./components/Qualifications";
 
 export default function Home() {
   return (
