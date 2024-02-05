@@ -29,20 +29,21 @@ export default function Home() {
           </li>
         </ul>
       </div>
+      <div className="contents">
+        <section id="profile">
+          <h2>プロフィール</h2>
+          <p>最適なエンジニアのプロフィールをここに記述します。</p>
+        </section>
 
-      <section id="profile">
-        <h2>プロフィール</h2>
-        <p>最適なエンジニアのプロフィールをここに記述します。</p>
-      </section>
+        <section id="skills">
+          <h2>スキル</h2>
+          <p>Webエンジニアとしてのスキルをここに記述します。</p>
+        </section>
 
-      <section id="skills">
-        <h2>スキル</h2>
-        <p>Webエンジニアとしてのスキルをここに記述します。</p>
-      </section>
+        <Qualifications />
 
-      <Qualifications />
-
-      <Contact />
+        <Contact />
+      </div>
     </main>
   );
 }
