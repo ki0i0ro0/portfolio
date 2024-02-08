@@ -1,6 +1,14 @@
 import styles from "./page.module.css";
 import Contact from "./components/Contact";
 import Qualifications from "./components/Qualifications";
+import Header from "./components/Header";
+
+const sections = [
+  { title: "プロフィール", url: "#profile" },
+  { title: "スキル", url: "#skills" },
+  { title: "資格", url: "#qualifications" },
+  { title: "コンタクト", url: "#contact" },
+];
 
 export default function Home() {
   return (
@@ -8,27 +16,11 @@ export default function Home() {
       <div className={styles.center}>
         <img
           className={styles.fullWidthImage}
-          src="/background.jpg" // 大きな画像のパスを指定します
+          src="/background.jpg"
           alt="ウユニ塩湖"
         />
       </div>
-
-      <div className={styles.links}>
-        <ul className={styles.horizontalList}>
-          <li>
-            <a href="#profile">プロフィール</a>
-          </li>
-          <li>
-            <a href="#skills">スキル</a>
-          </li>
-          <li>
-            <a href="#qualifications">資格</a>
-          </li>
-          <li>
-            <a href="#contact">コンタクト</a>
-          </li>
-        </ul>
-      </div>
+      <Header sections={sections}></Header>
       <div className="contents">
         <section id="profile">
           <h2>プロフィール</h2>
