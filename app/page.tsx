@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Contact from "./components/Contact";
+import Skill from "./components/Skill";
 import Qualifications from "./components/Qualifications";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
@@ -35,10 +36,7 @@ export default function Home() {
             </section>
           </Grid>
           <Grid sx={{ marginBottom: "300px" }}>
-            <section id="skills">
-              <h2>スキル</h2>
-              <p>Webエンジニアとしてのスキルをここに記述します。</p>
-            </section>
+            <Skill />
           </Grid>
           <Grid sx={{ marginBottom: "300px" }}>
             <Qualifications />
