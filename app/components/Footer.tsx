@@ -10,9 +10,8 @@ function Copyright() {
       {"Copyright © "}
       <Link color="inherit" href="https://github.com/ki0i0ro0">
         ki0i0ro0
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      </Link>
+      {` ${new Date().getFullYear()}.`}
     </Typography>
   );
 }

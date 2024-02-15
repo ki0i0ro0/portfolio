@@ -1,9 +1,9 @@
-import styles from "./page.module.css";
-import Contact from "./components/Contact";
-import Qualifications from "./components/Qualifications";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import styles from "./page.module.css";
+import Contact from "./components/Contact";
+import Qualifications from "./components/Qualifications";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -26,7 +26,7 @@ export default function Home() {
         />
       </div>
       <Container maxWidth="lg">
-        <Header sections={sections}></Header>
+        <Header sections={sections} />
         <div className="contents">
           <Grid sx={{ marginBottom: "300px" }}>
             <section id="profile">
