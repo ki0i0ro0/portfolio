@@ -1,4 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
+
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import styles from "./page.module.css";
@@ -16,18 +17,18 @@ const sections = [
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <>
       <CssBaseline />
-      <div className={styles.center}>
-        <img
-          className={styles.fullWidthImage}
-          src="/background.jpg"
-          alt="ウユニ塩湖"
-        />
-      </div>
+      <img
+        className={styles.fullWidthImage}
+        src="/background.jpg"
+        alt="ウユニ塩湖"
+      />
       <Container maxWidth="lg">
-        <Header sections={sections} />
-        <div className="contents">
+        <Grid marginBottom={10}>
+          <Header sections={sections} />
+        </Grid>
+        <main>
           <Grid sx={{ marginBottom: "300px" }}>
             <section id="profile">
               <h2>プロフィール</h2>
@@ -46,9 +47,9 @@ export default function Home() {
           <Grid sx={{ marginBottom: "300px" }}>
             <Contact />
           </Grid>
-        </div>
+        </main>
       </Container>
       <Footer title="" description="" />
-    </main>
+    </>
   );
 }
