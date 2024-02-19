@@ -1,10 +1,10 @@
 import CssBaseline from "@mui/material/CssBaseline";
-
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import styles from "./page.module.css";
 import Contact from "./components/Contact";
 import Skill from "./components/Skill";
+import Profile from "./components/Profile";
 import Qualifications from "./components/Qualifications";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -31,10 +31,7 @@ export default function Home() {
         </Grid>
         <main>
           <Grid sx={{ marginBottom: "300px" }}>
-            <section id="profile">
-              <h2>プロフィール</h2>
-              <p>最適なエンジニアのプロフィールをここに記述します。</p>
-            </section>
+            <Profile />
           </Grid>
           <Grid sx={{ marginBottom: "300px" }}>
             <Skill />
