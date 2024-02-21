@@ -4,29 +4,31 @@ import CardContent from "@mui/material/CardContent";
 
 const items = [{ title: "Node.js" }, { title: "Next.js" }, { title: "NestJs" }];
 
-const Skill = () => (
-  <section id="skills">
-    <h2>スキル</h2>
-    <p>Webエンジニアとしてのスキルをここに記述します。</p>
-    <Box
-      sx={{
-        width: "100%",
-        maxWidth: 500,
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-        gap: 2,
-      }}
-    >
-      {items.map((value, index) => (
-        <Card key={`${index}`}>
-          <CardContent>
-            <Typography>{value.title}</Typography>
-            <Typography>Description of the card.</Typography>
-          </CardContent>
-        </Card>
-      ))}
-    </Box>
-  </section>
-);
+function Skill() {
+  return (
+    <section id="skills">
+      <h2>スキル</h2>
+      <p>Webエンジニアとしてのスキルをここに記述します。</p>
+      <Box
+        sx={{
+          width: "100%",
+          maxWidth: 500,
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+          gap: 2,
+        }}
+      >
+        {items.map((value) => (
+          <Card key={`${value.title}`}>
+            <CardContent>
+              <Typography>{value.title}</Typography>
+              <Typography>Description of the card.</Typography>
+            </CardContent>
+          </Card>
+        ))}
+      </Box>
+    </section>
+  );
+}
 
 export default Skill;
