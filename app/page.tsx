@@ -30,10 +30,10 @@ export default function Home() {
           <Header sections={sections} />
         </Grid>
         <main>
-          <Grid sx={{ marginBottom: "300px" }}>
+          <Grid sx={{ marginBottom: "100px" }}>
             <Profile />
           </Grid>
-          <Grid sx={{ marginBottom: "300px" }}>
+          <Grid sx={{ marginBottom: "100px" }}>
             <Skill />
           </Grid>
           <Grid sx={{ marginBottom: "300px" }}>

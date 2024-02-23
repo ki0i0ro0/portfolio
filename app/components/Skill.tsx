@@ -1,9 +1,13 @@
-import { Box, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
-const items = [{ title: "Node.js" }, { title: "Next.js" }, { title: "NestJs" }];
+const items = [
+  { title: "Node.js", year: "", description: "" },
+  { title: "Next.js", year: "", description: "" },
+  { title: "NestJs", year: "", description: "" },
+];
 
 function Skill() {
   return (
@@ -17,25 +21,29 @@ function Skill() {
         <TipsAndUpdatesIcon />
         スキル
       </Typography>
-      <p>Webエンジニアとしてのスキルをここに記述します。</p>
-      <Box
-        sx={{
-          width: "100%",
-          maxWidth: 500,
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-          gap: 2,
-        }}
-      >
+      <Typography sx={{ mb: 1.5 }}>
+        Webエンジニアとしてのスキルをここに記述します。
+      </Typography>
+      <Grid container spacing={4}>
         {items.map((value) => (
-          <Card key={`${value.title}`}>
-            <CardContent>
-              <Typography>{value.title}</Typography>
-              <Typography>Description of the card.</Typography>
-            </CardContent>
-          </Card>
+          <Grid item xs={12} md={6} key={`${value.title}`}>
+            <Card sx={{ display: "flex" }}>
+              <CardContent sx={{ flex: 1 }}>
+                <Typography variant="h5" component="div">
+                  {value.title}
+                </Typography>
+                <Typography
+                  color="text.secondary"
+                  sx={{ mb: 1.5, fontSize: 14 }}
+                >
+                  業務使用年数{value.year}年
+                </Typography>
+                <Typography variant="body2">{value.description}</Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </Box>
+      </Grid>
     </section>
   );
 }
