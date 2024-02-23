@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import PersonIcon from "@mui/icons-material/Person";
 
 function Contact() {
   return (
@@ -10,6 +10,7 @@ function Contact() {
         sx={{ fontWeight: "bold" }}
         gutterBottom
       >
+        <PersonIcon />
         プロフィール
       </Typography>
       <Typography variant="body1">

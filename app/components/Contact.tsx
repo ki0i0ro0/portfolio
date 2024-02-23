@@ -1,5 +1,5 @@
 import { Link, Typography } from "@mui/material";
-import React from "react";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 function Contact() {
   return (
@@ -10,6 +10,7 @@ function Contact() {
         sx={{ fontWeight: "bold" }}
         gutterBottom
       >
+        <PhoneIcon />
         コンタクト
       </Typography>
       <Typography variant="body1">

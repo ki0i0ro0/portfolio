@@ -1,13 +1,22 @@
 import { Box, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
 const items = [{ title: "Node.js" }, { title: "Next.js" }, { title: "NestJs" }];
 
 function Skill() {
   return (
     <section id="skills">
-      <h2>スキル</h2>
+      <Typography
+        variant="h5"
+        component="h2"
+        sx={{ fontWeight: "bold" }}
+        gutterBottom
+      >
+        <TipsAndUpdatesIcon />
+        スキル
+      </Typography>
       <p>Webエンジニアとしてのスキルをここに記述します。</p>
       <Box
         sx={{
