@@ -22,7 +22,7 @@ export default function Home() {
       <CssBaseline />
       <img
         className={styles.fullWidthImage}
-        src="/background.jpg"
+        src={`${process.env.NODE_ENV === "production" ? "/portfolio" : ""}/background.jpg`}
         alt="ウユニ塩湖"
       />
       <Container maxWidth="lg">
