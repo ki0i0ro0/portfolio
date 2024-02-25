@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import Qualifications from "./components/Qualifications";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Code from "./components/Code";
 
 const sections = [
   { title: "プロフィール", url: "#profile" },
@@ -35,6 +36,9 @@ export default function Home() {
           </Grid>
           <Grid sx={{ marginBottom: "100px" }}>
             <Skill />
+          </Grid>
+          <Grid sx={{ marginBottom: "100px" }}>
+            <Code />
           </Grid>
           <Grid sx={{ marginBottom: "300px" }}>
             <Qualifications />
