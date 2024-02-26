@@ -12,7 +12,7 @@ Reactを中心に、最新のフロントエンド技術を活用してユーザ
 
 function Contact() {
   return (
-    <section id="profile">
+    <>
       <Typography
         variant="h5"
         component="h2"
@@ -28,7 +28,7 @@ function Contact() {
       >
         {message}
       </Typography>
-    </section>
+    </>
   );
 }
 

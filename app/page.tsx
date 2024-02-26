@@ -11,10 +11,11 @@ import Footer from "./components/Footer";
 import Code from "./components/Code";
 
 const sections = [
-  { title: "プロフィール", url: "#profile" },
-  { title: "スキル", url: "#skills" },
-  { title: "資格", url: "#qualifications" },
-  { title: "コンタクト", url: "#contact" },
+  { title: "プロフィール", url: "profile", component: <Profile /> },
+  { title: "スキル", url: "skills", component: <Skill /> },
+  { title: "コード", url: "code", component: <Code /> },
+  { title: "資格", url: "qualifications", component: <Qualifications /> },
+  { title: "コンタクト", url: "contact", component: <Contact /> },
 ];
 
 export default function Home() {
@@ -31,21 +32,11 @@ export default function Home() {
           <Header sections={sections} />
         </Grid>
         <main>
-          <Grid sx={{ marginBottom: "100px" }}>
-            <Profile />
-          </Grid>
-          <Grid sx={{ marginBottom: "100px" }}>
-            <Skill />
-          </Grid>
-          <Grid sx={{ marginBottom: "100px" }}>
-            <Code />
-          </Grid>
-          <Grid sx={{ marginBottom: "300px" }}>
-            <Qualifications />
-          </Grid>
-          <Grid sx={{ marginBottom: "300px" }}>
-            <Contact />
-          </Grid>
+          {sections.map((section) => (
+            <section id={section.url} key={section.url}>
+              <Grid marginBottom={10}>{section.component}</Grid>
+            </section>
+          ))}
         </main>
       </Container>
       <Footer title="" description="" />

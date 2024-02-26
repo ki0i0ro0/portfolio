@@ -55,7 +55,7 @@ const items = [
 
 function Skill() {
   return (
-    <section id="skills">
+    <>
       <Typography
         variant="h5"
         component="h2"
@@ -88,7 +88,7 @@ function Skill() {
           </Grid>
         ))}
       </Grid>
-    </section>
+    </>
   );
 }
 

@@ -3,7 +3,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 function Contact() {
   return (
-    <section id="contact">
+    <>
       <Typography
         variant="h5"
         component="h2"
@@ -24,7 +24,7 @@ function Contact() {
           @ki0i0ro0
         </Link>
       </Typography>
-    </section>
+    </>
   );
 }
 

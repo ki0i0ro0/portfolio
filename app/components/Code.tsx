@@ -37,7 +37,7 @@ const rows = [
 
 function Code() {
   return (
-    <section id="contact">
+    <>
       <Typography
         variant="h5"
         component="h2"
@@ -77,7 +77,7 @@ function Code() {
           </TableBody>
         </Table>
       </TableContainer>
-    </section>
+    </>
   );
 }
 
